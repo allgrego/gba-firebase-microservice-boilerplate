@@ -1,6 +1,6 @@
 # GBA Firebase Microservice Boilerplate
 
-A GBA Logistics template for a Firebase based microservice with TypeScript and Express
+A GBA Logistics template for a Firebase based microservice with TypeScript and Express.js
 
 **Author**: _Gregorio Alvarez < galvarez@gbalogistic.com >_
 **Web site**: `https://gbalogistic.com`
@@ -12,8 +12,7 @@ Clone this repository in your firebase project folder _functions/src/microservic
 **Please check that your required dependencies for this app are added to _/functions/package.json_ file to be able to use them**
 
 ### Sample Firebase Project Folder Structure
-
-firebase-root
+    firebase-root
     ├── ...
     ├── functions                   # Firebase functions folder
     │   ├── src                     # Folder for TypeScript code
@@ -32,7 +31,7 @@ firebase-root
     ├── ...
     ├── firebase.json           # Firebase configuration file
     └── package.json            # Global firebase project package.json file
-
+    
 ## Endpoints
 
 - GET /random
@@ -45,12 +44,12 @@ Obtain a JSON greetings message response
 
 | Name  | Data Type | Required / Optional | Default Value | Description                               |
 | ----- | --------- | ------------------- | ------------- | ----------------------------------------- |
-| name  | string   | optional            | stranger             | name to be displayed in greeting           |
+| name  | string   | optional            | stranger             | name to be displayed in greeting    |
 
-Sample request with optional parameters:
+Sample request:
 
 ```
-https://microservice1name.domain.com/v1/countries?page=1&count=2
+https://microservice1name.domain.com/v1/random
 
 ```
 
